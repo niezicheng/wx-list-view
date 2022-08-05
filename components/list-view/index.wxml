@@ -1,0 +1,30 @@
+<view class="list-view">
+  <!-- 列表前自定义插槽 -->
+  <slot name="before" />
+  <view
+    wx:for="{{ viewList }}"
+    id="wrp_{{ groupIndex }}"
+    wx:for-index="groupIndex"
+    wx:for-item="listItem"
+    wx:key="index"
+  >
+    <view
+      wx:for="{{ listItem }}"
+      wx:for-item="listItem"
+      wx:key="index"
+    >
+      <block wx:if="{{ listItem.listViewItemHeight }}">
+        <!-- 不在可视范围内 -->
+        <view style="height: {{listItem.listViewItemHeight}}px;overflow: hidden">
+          <skeleton/>
+        </view>·
+      </block>
+      <block wx:else>
+        <!-- 在可视范围内 -->
+        <item listItem="{{listItem}}"/>
+      </block>
+    </view>
+  </view>
+  <!-- 列表后自定义插槽 -->
+  <slot name="after" />
+</view>

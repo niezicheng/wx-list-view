@@ -1,0 +1,12 @@
+<scroll-view
+  scroll-y="{{ true }}"
+  bindscrolltolower="handleScrollLower"
+  style="height: {{winHeight}}px;"
+  lower-threshold="200"
+>
+  <list-view
+    list="{{list}}"
+    generic:item="item"
+    generic:skeleton="skeleton"
+  />
+</scroll-view>

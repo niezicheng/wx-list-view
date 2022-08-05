@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="/images/empty.png" />
+  <view class="right-wrap">
+    <text class="line" />
+    <text class="line" style="height: 30px" />
+  </view>
+</view>

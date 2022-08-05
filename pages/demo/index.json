@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "list-view": "../../components/list-view",
+    "item": "../components/item",
+    "skeleton": "../components/skeleton"
+  }
+}

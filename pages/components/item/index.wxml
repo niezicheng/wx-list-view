@@ -1,0 +1,10 @@
+<view class="container">
+  <image src="{{listItem.productUrl}}" />
+  <view class="right-wrap">
+    <text class="title">{{listItem.title}}</text>
+    <text class="desc">{{listItem.productDesc}}</text>
+  </view>
+</view>
+
+
+

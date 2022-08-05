@@ -1,0 +1,28 @@
+/* pages/components/item/index.wxss */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+image {
+  width: 120px;
+  height: 120px;
+}
+
+.right-wrap {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 12px;
+}
+
+.line {
+  width: 100%;
+  height: 15px;
+  margin-bottom: 20px;
+  background-color: #efefef;
+}
